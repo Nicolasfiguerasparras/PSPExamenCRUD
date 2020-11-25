@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#E91E63">
+
+    <TextView
+        android:id="@+id/tvItemId"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/id_box_shape"
+        android:gravity="center"
+        android:text="ID"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvItemNombre"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/box_shape"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toStartOf="@+id/tvItemApellidos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvItemId" />
+
+    <TextView
+        android:id="@+id/tvItemApellidos"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/box_shape"
+        android:gravity="center"
+        android:text="Apellidos"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvItemNombre"
+        app:layout_constraintTop_toTopOf="@+id/tvItemNombre" />
+
+    <TextView
+        android:id="@+id/tvItemTelefono"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/box_shape"
+        android:gravity="center"
+        android:text="Teléfono"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toStartOf="@+id/tvItemFechaNacimiento"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvItemNombre" />
+
+    <TextView
+        android:id="@+id/tvItemFechaNacimiento"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/box_shape"
+        android:gravity="center"
+        android:text="01/01/1990"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvItemTelefono"
+        app:layout_constraintTop_toTopOf="@+id/tvItemTelefono" />
+
+    <TextView
+        android:id="@+id/tvItemLocalidad"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/box_shape"
+        android:gravity="center"
+        android:text="Localidad"
+        android:textColor="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvItemCalle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvItemTelefono" />
+
+    <TextView
+        android:id="@+id/tvItemCalle"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/box_shape"
+        android:gravity="center"
+        android:text="Calle"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toStartOf="@+id/tvItemNumero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvItemLocalidad"
+        app:layout_constraintTop_toTopOf="@+id/tvItemLocalidad" />
+
+    <TextView
+        android:id="@+id/tvItemNumero"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/box_shape"
+        android:gravity="center"
+        android:text="Número"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvItemCalle"
+        app:layout_constraintTop_toTopOf="@+id/tvItemLocalidad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
